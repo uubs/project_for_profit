@@ -3,17 +3,25 @@
 
 #include <stdio.h>
 int main() {
-    Init(500, TAIL, 2, 0.5);
-    Run();
-    printf("result is %f\n", result());
+    int n = 5;
 
-    Init(500, NONTAIL, 2, 0.5);
-    Run();
-    printf("result is %f\n", result());
+    // toward different variant
+    for (int vari = 1; vari <= 3; ++ vari) {
+        for (double x = 0.5; x > - 0.6; x -= 0.1) {
+            Init(n, TAIL, vari, x);
+            Run();
+            printf("tail recursion (n = 5, variant = %d, x = %f): result is %f\n", vari, x, result());
 
-    Init(500, COMBINE, 2, 0.5);
-    Run();
-    printf("result is %f\n", result());
-    
-    printf("\n");
+            Init(n, NONTAIL, vari, x);
+            Run();
+            printf("nontail recursion (n = 5, variant = %d, x = %f): result is %f\n", vari, x, result());
+
+            Init(n, COMBINE, vari, x);
+            Run();
+            printf("combine recursion (n = 5, variant = %d, x = %f): result is %f\n", vari, x, result());
+
+            printf("\n");
+
+        }
+    }
 }

@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 int main() {
+    int n = 5;
     Init(500, TAIL, 2, 0.5);
     Run();
     printf("result is %f\n", result());

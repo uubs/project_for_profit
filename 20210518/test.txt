@@ -1,0 +1,141 @@
+−fi_1 *_x *(2 * i − 3)/(2 * i−2)
+
+ Fi  = 1/, |_x| < 1.
+
+Variant № 4
+
+F1 = 1;  Fi = −fi_1 *_x(3i −5)/(3i−3), i > 1;
+
+ Fi  = 1/, |_x| < 1.
+
+Variant № 5
+
+F1 = 1;   Fi = fi_1 *(2_x/3 – 1); i > 1;
+
+ Fi  = 1.5/_x, 1 < _x < 2.
+
+Variant № 6
+
+F1 = 1;   Fi = fi_1 *(i −1)1_x ln2/i; i > 1;
+
+ Fi  = 2_x.
+
+Variant № 7
+
+F1 = (_x −1)/(_x + 1);   Fi+1 = Fi (2i−1)(_x −1)2/((2i+1)(_x + 1)2); i > 1;
+
+ Fi  = − 0.5ln _x;  _x < 1.
+
+Variant № 8
+
+F1 = _x − 1;  Fi+1 =  − Fi  (_x – 1)i/(i + 1); i > 0;
+
+ Fi  = ln _x, 0 < _x < 2;
+
+Variant № 9
+
+F1 = (_x −1)/_x;   Fi+1= Fi i(_x −1)/(i_x + _x); i > 1;
+
+ Fi  = ln _x;  _x >0.5.
+
+Variant  № 10
+
+F1 = _x;   Fi = −fi_1 * _x(i −1) (i −2)/(i2 −i); i > 1;
+
+(1+_x) Fi  = ln (1+_x);  −1<_x <2.
+
+Variant № 11
+
+F1 = _x;  Fi+1 =  − Fi  _x2/(4i2 + 2i); i > 0;
+
+ Fi  = sin _x.
+
+Variant № 12
+
+F1 = 1;   Fi+1 = − Fi  _x2/(4i2− 2i); i > 0;
+
+ Fi  = cos _x.
+
+Variant № 13
+
+F1 = _x;  Fi+1 =   Fi  _x2 (2i −1)2 /(4i2 + 2i); i > 0;
+
+ Fi  = arsin _x, −1< _x< 1.
+
+Variant № 14
+
+F0 = _x;  Fi =   fi_1 * (2i − 1)2_x2/(2i(2i+1)); i > 0;
+
+/2 −  Fi  = arccos _x.
+
+Variant № 15
+
+F1 = _x;  Fi+1 =  − Fi  _x2 (2i −1) /(2i + 1); i > 0;
+
+ Fi  = arctg _x, |_x| <1;
+
+Variant № 16
+
+F1 = _x;  Fi +1=   Fi  (2i − 1)2 _x2/(4i2 +2i); i > 0;
+
+ Fi  = arsin _x, |_x| <1;
+
+Variant № 17
+
+F1 = _x;  Fi+1 =   Fi _x2/(4i2 +2i); i > 0;
+
+ Fi  = sh _x, |_x| <106;
+
+Variant  № 18
+
+F1 = 1;  Fi+1 =   Fi _x2/(4i2 −2i); i > 1;
+
+ Fi  = ch _x, |_x| <106;
+
+Variant  № 19
+
+F1 = _x;  Fi+1 =  − Fi  _x2 (2i– 1)2/(4i2 + 2i); i > 0;
+
+ Fi  = arcsh _x, |_x| <1;
+
+Variant  № 20
+
+F1 = _x;  Fi+1 =   Fi  _x2(2i−1)/(2i+1); i > 0;
+
+ Fi  = arcth _x, |_x| <1;
+
+Variant № 21
+
+F0 = 4/3; F1 = _x/2;   Fi+1 =   −Fi  _x (2i−1)/2i; i > 1;
+
+ Fi  = , |_x| <1;
+
+Variant № 22
+
+F1 = _x – 1;  Fi+1 =   −Fi  (i −1)(_x – 1)/i; i > 0;
+
+ Fi  = ln _x, 0 < _x <2;
+
+Variant № 23
+
+F1 = (_x – 1)/_x;  Fi+1 =   Fi  (i −1)(_x – 1)/(i_x); i > 0;
+
+ Fi  = ln _x, 0.5 < _x;
+
+Variant № 24
+
+F0 = 1;  Fi+1 =  − Fi  _x2/i;  i > 0;
+
+ Fi  = e−_x_x ;
+
+Variant № 25
+
+F1 = _x;  Fi =  − Fi−1  _x(i – 1)/i; i > 1;
+
+ Fi  = ln (1 + _x), −1 < _x < 1;
+
+Variant № 26
+
+F1 = _x;  Fi =   Fi−1  _x2 (2i – 3)/(2i−1); i > 1;
+
+ Fi  = 0.5ln ((1 + _x)/(1 – _x)), −1 < _x < 1;
