@@ -21,9 +21,23 @@ static void InitF1F2() {
     _F1[2] = 1;
     _F2[2] = -1 * _x / 3;
     
-    _F1[3] = 1;
-    _F2[3] = -1 * _x * (2 * 2 - 3) / (2 * 2 - 2);
+    _F1[3] = 0; 
+    _F2[3] = 0; 
 
+    _F1[4] = 0; 
+    _F2[4] = 0; 
+
+    _F1[5] = 0; 
+    _F2[5] = 0; 
+
+    _F1[6] = 0; 
+    _F2[6] = 0; 
+
+    _F1[7] = 0; 
+    _F2[7] = 0; 
+
+    _F1[8] = _x - 1; 
+    _F2[8] = -1 * _F1[8] * (_x - 1) * 2 / (2 + 1); 
     // ...
 } 
 
@@ -57,16 +71,22 @@ static double ChooseVariant3ForTailRecursive(int i, double fi_1) {
         case 3:
             return -1 * fi_1 * _x * (2 * i - 3) / (2 * i - 2);
             break;
-        /*
         case 4:
+            return 0;
             break;
         case 5:
+            return 0;
             break;
         case 6:
+            return 0;
             break;
         case 7:
+            return 0;
             break;
-        */
+        case 8:
+            return -1 * fi_1 * (_x - 1) * i / (i + 1);
+            break;
+        // ... 
         default:
             printf("not defined \n");
             exit(-1);
