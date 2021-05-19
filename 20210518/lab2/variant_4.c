@@ -1,5 +1,5 @@
 #include "list_queue.h"
-#include "list.h"
+#include "list_init.h"
 
 void Varint4() {
     // initial a queue

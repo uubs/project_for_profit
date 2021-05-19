@@ -63,7 +63,7 @@ void* Init(int n, KeyType key_type, unsigned key_size, InputMode input_mode, Lis
         case DECK: 
             break;
         case DIRECT_LINKED_LINEAR_LIST: 
-            return Dire
+            return DirectLinkedLinearList_Init();
             break;
         case INVERTED_SINGLE_LINKED_LINEAR_LIST: 
             break;

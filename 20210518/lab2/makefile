@@ -1,7 +1,14 @@
-ALL:queue
+ALL: variant8
 
-list: input_key.c list_init.c list_sort.c variant.c list_print.c main.c variant.h list.h
-	gcc input_key.c list_init.c list_sort.c list_print.c variant.c main.c -o list_variant -g
+CFILE = list_direct_linked_linear_list.c list_queue.c list_init.c
+HFILE = list_direct_linked_linear_list.h list_queue.h list_init.h
 
-queue: list_queue.c list_queue.h list_init.c list.h variant_4.c
-	gcc list_init.c list_queue.c variant_4.c -o variant_4 -g
+
+
+variant4: ${CFILE} variant_4.c ${HFILE}
+	gcc ${CFILE} variant_4.c -o variant_4 -g
+
+variant8: ${CFILE} variant_8.c ${HFILE}
+	gcc ${CFILE} variant_8.c -o variant_8 -g
+
+

@@ -1,7 +1,7 @@
 #ifndef _H_LIST_QUEUE_H_
 #define _H_LIST_QUEUE_H_
 
-#include "list.h"
+#include "list_init.h"
 
 typedef struct queue{
     Key key;
