@@ -1,4 +1,6 @@
-#include "list.h"
+#include "list_init.h"
+#include "list_queue.h"
+#include "list_direct_linked_linear_list.h"
 
 ////////////////////////////////////////////////////////
 ///////////Confirue variable set by Init////////////////
@@ -12,16 +14,10 @@ static InputMode _input_mode; // specify the input data source (3)
 
 static ListType _list_type; // specify the type of list (4)
 
-static void* _head;
 
 ////////////////////////////////////////////////////////
 ///////////Get Confirue variable////////////////////////
 ///////////////////////////////////////////////////////
-
-void* GetHeadNode() {
-    return _head;
-}
-
 
 int GetSizeOfList() {
     return _n;
@@ -48,7 +44,7 @@ int GetN() {
 }
 #include <stdio.h>
 #include <stdlib.h>
-void Init(int n, KeyType key_type, unsigned key_size, InputMode input_mode, ListType list_type) {
+void* Init(int n, KeyType key_type, unsigned key_size, InputMode input_mode, ListType list_type) {
     _n            = n;
     _key_type     = key_type;
     _key_size     = key_size;
@@ -60,16 +56,14 @@ void Init(int n, KeyType key_type, unsigned key_size, InputMode input_mode, List
     // (2) give value to key_type
     switch(_list_type) {
         case QUEUE: 
+            return QueueInit();
             break;
         case STACK: 
             break;
         case DECK: 
             break;
         case DIRECT_LINKED_LINEAR_LIST: 
-            _head = (DirectLinkedLinearList* ) malloc (sizeof(DirectLinkedLinearList));
-            ((DirectLinkedLinearList* )_head)->key_type = _key_type;
-            ((DirectLinkedLinearList* )_head)->next = NULL;
-            if (_key_type == STRING) ((DirectLinkedLinearList* )_head)->key.key_string = NULL;
+            return Dire
             break;
         case INVERTED_SINGLE_LINKED_LINEAR_LIST: 
             break;
@@ -83,6 +77,7 @@ void Init(int n, KeyType key_type, unsigned key_size, InputMode input_mode, List
             printf("intilize list error\n");
             exit(-1);
     }
+    return NULL;
 }
 
 
