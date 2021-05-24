@@ -7,7 +7,7 @@ int main() {
 
     // toward different variant
     int vari = 8;
-    for (double x = 0.5; x > - 0.6; x -= 0.1) {
+    for (double x = 1.9; x > 0.1; x -= 0.1) {
         Init(n, TAIL, vari, x);
         Run();
         printf("tail recursion (n = 5, variant = %d, x = %f): result is %f\n", vari, x, result());
